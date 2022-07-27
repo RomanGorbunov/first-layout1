@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/*html {
+  scroll-behavior: smooth;
+}*/
+
 a {
   text-decoration: none;
   color: inherit;
@@ -66,7 +70,7 @@ body {
 }
 
 .bike {
-  padding: 100px 0 150px;
+  padding: 100px 0 0;
 }
 .bike__inner {
   display: flex;
@@ -174,7 +178,8 @@ body {
 }
 
 .info {
-  margin-bottom: 150px;
+  padding-top: 150px;
+  margin-bottom: 50px;
 }
 .info__inner {
   display: flex;
@@ -205,6 +210,7 @@ body {
 }
 
 .characteristics {
+  padding-top: 100px;
   margin-bottom: 150px;
 }
 
@@ -403,4 +409,245 @@ body {
 
 .form__btn:hover {
   background-color: #ff4040;
+}
+
+.footer {
+  background-color: #131313;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.footer__link {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  font-size: 15px;
+  line-height: 12px;
+}
+
+.footer__social-link + .footer__social-link {
+  margin-left: 25px;
+}
+
+.footer__contacts {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 12px;
+}
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer__contacts-link + .footer__contacts-link {
+  margin-top: 10px;
+}
+
+.footer__contacts-img {
+  margin-right: 10px;
+}
+
+@media (max-width: 1250px) {
+  .slider__img {
+    object-fit: cover;
+    height: 460px;
+  }
+}
+
+@media (max-width: 1110px) {
+  .bike__inner {
+    flex-wrap: wrap;
+  }
+  .bike__text {
+    max-width: 100%;
+  }
+  .bike {
+    padding: 0;
+  }
+  .bike__link {
+    margin-top: 35px;
+    display: inherit;
+    text-align: center;
+  }
+  .bike__column {
+    margin-bottom: 30px;
+  }
+  .bike__column-slider {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .bike__title {
+    text-align: center;
+  }
+  .bike__subtitle {
+    text-align: center;
+  }
+  .info__img {
+    display: none;
+  }
+  .info__list {
+    flex-basis: 100%;
+  }
+  .info__item-text {
+    max-width: 100%;
+  }
+  .info {
+    padding-top: 30px;
+  }
+  .info__item-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu {
+    margin-right: 0;
+  }
+  .characteristics {
+    padding-top: 30px;
+    margin-bottom: 80px;
+  }
+  .characteristics__inner {
+    flex-wrap: wrap;
+  }
+  .characteristics__title {
+    margin: 0px 0 25px;
+    text-align: center;
+  }
+  .characteristics__list-title {
+    text-align: center;
+  }
+  .characteristics__line {
+    justify-content: space-evenly;
+  }
+  .characteristics__items {
+    margin-right: 10px;
+    flex-basis: 100%;
+  }
+
+  .characteristics__list + .characteristics__list {
+    padding-top: 10px;
+  }
+  .characteristics__name {
+    text-align: center;
+    flex-basis: 50%;
+  }
+
+  .characteristics__descr {
+    text-align: center;
+    flex-basis: 50%;
+  }
+  .characteristics__img {
+    order: -1;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .slider__img {
+    height: 380px;
+  }
+
+  .slider__item {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 775px) {
+  .slider__img {
+    height: 300px;
+  }
+
+  .slider__item {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 670px) {
+  .bike__title {
+    font-size: 44px;
+    line-height: 57px;
+    margin: 30px 0 5px;
+  }
+  .bike__subtitle {
+    font-size: 22px;
+    line-height: 29px;
+    margin: 0 0 30px;
+  }
+  .bike__list {
+    flex-wrap: wrap;
+  }
+  .bike__list-item {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+  .info__item + .info__item {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .header__inner {
+    text-align: center;
+    display: block;
+  }
+  .menu {
+    margin-top: 50px;
+  }
+  .menu__list {
+    justify-content: space-evenly;
+  }
+  .menu__item + .menu__item {
+    padding-left: 0;
+  }
+  .menu__link {
+    padding: 25px 20px;
+  }
+  .slider__img {
+    height: 220px;
+  }
+
+  .slider__item {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bike__link {
+    padding: 20px 35px;
+    letter-spacing: 0.7em;
+  }
+  .slider__img {
+    height: 160px;
+  }
+
+  .slider__item {
+    padding-left: 4px;
+  }
+}
+
+@media (max-width: 450px) {
+  .menu__list {
+    justify-content: space-between;
+  }
+  .menu__link {
+    padding: 25px 0px;
+  }
+}
+
+@media (max-width: 350px) {
+  .menu {
+    margin-top: 30px;
+  }
+  .menu__link {
+    font-size: 12px;
+  }
+  .slider__img {
+    height: 150px;
+  }
+
+  .slider__item {
+    padding-left: 4px;
+  }
 }
