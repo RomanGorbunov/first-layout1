@@ -500,6 +500,12 @@ body {
   .info__item-title {
     text-align: center;
   }
+  .form__bike-img {
+    width: 500px;
+  }
+  .form__bike {
+    top: 45px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -552,6 +558,60 @@ body {
   .slider__item {
     padding-left: 10px;
   }
+  .price {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 960px) {
+  .form__label-box {
+    margin-bottom: 300px;
+    display: block;
+  }
+  .form__bike {
+    top: auto;
+    bottom: 80px;
+    right: auto;
+    left: 0;
+  }
+  .form__bike-img {
+    width: 440px;
+    transform: translateX(165px);
+  }
+  .form__bike-price {
+    font-size: 25px;
+    position: absolute;
+    top: -100px;
+    left: auto;
+    right: -170px;
+    width: 178px;
+    height: 73px;
+    transform: translateX(-70%);
+  }
+  .form__bike-price::after {
+    width: 178px;
+    height: 73px;
+    top: 7px;
+  }
+  .form__title {
+    text-align: center;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .form__text {
+    max-width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .form__btn {
+    margin-left: 160px;
+  }
+  .form__input-name,
+  .form__input-phone {
+    margin: 10px 10px 2px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 775px) {
@@ -562,6 +622,19 @@ body {
   .slider__item {
     padding-left: 10px;
   }
+  .form__bike-img {
+    transform: translateX(70px);
+}
+.form__btn {
+  margin-left: 75px;}
+  } 
+
+@media (max-width: 670px) {
+  .form__bike-img {
+    transform: translateX(0px);
+  }
+  .form__btn {
+    margin-left: 5px;
 }
 
 @media (max-width: 670px) {
@@ -611,6 +684,26 @@ body {
   .slider__item {
     padding-left: 10px;
   }
+  .footer__inner {
+    display: block;
+    height: auto;
+    padding: 15px 0;
+    text-align: center;
+  }
+  .footer__social{
+padding: 15px 0;
+  }
+  .footer__contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 510px) {
+  .form__bike-img {
+    width: 360px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -634,6 +727,21 @@ body {
   .menu__link {
     padding: 25px 0px;
   }
+  .form__btn {
+    padding: 16px 34px;
+  }
+}
+
+@media (max-width: 440px) {
+  .form__bike-img {
+    width: 272px;
+  }
+}
+
+@media (max-width: 380px) {
+  .form__btn {
+    letter-spacing: 0.7em;
+  }
 }
 
 @media (max-width: 350px) {
@@ -650,4 +758,6 @@ body {
   .slider__item {
     padding-left: 4px;
   }
+  .form__bike-img {
+    width: 243px;
 }
